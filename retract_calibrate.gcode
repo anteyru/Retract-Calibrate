@@ -113,7 +113,7 @@ while var.layers_count <= var.layers_number                             ; Вып
       G2 I{-var.print_diameter/2} E{var.filament_length} F{var.print_speed*60}
       set var.print_diameter=var.print_diameter-var.line_width*2        ; Диаметр следующей внутренней окружности
 
-	  ; Если это НЕ 1-й слой, напечатать заданное число периметров башни
+      ; Если это НЕ 1-й слой, напечатать заданное число периметров башни
       if (var.layers_count!=1) & (var.print_diameter<(var.tower_diameter-var.tower_perimeters*var.line_width))
          break
 
